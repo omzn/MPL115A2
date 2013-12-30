@@ -1,4 +1,4 @@
-getMPL115A2 for Raspberry Pi
+MPL115A2 sensor reader for Raspberry Pi
 ========
 
 A program to read an absolute pressure sensor MPL115A2 for Raspberry Pi.
@@ -8,7 +8,7 @@ This program reads the sensor and shows current absolute pressure.
 
 ## Requirements
 
-- wiring Pi library
+- wiringPi library
 
 ## Installation
 
@@ -17,8 +17,14 @@ This program reads the sensor and shows current absolute pressure.
 
 ## Usage
 
-    $ mpl115a2
+    $ getMPL115A2
     1006.8
 
+## Reference
+
+[MPL115A2 data sheet](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf)
+
 ## Contact
-Osamu Mizuno / `o.mizuno@mac.com`
+
+Osamu Mizuno / omzn
+

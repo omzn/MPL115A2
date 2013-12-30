@@ -10,13 +10,13 @@
 #define DEV_ID 0x60
 
 int swap16(int x) {
-  return ( ((x&0x00FF)<<8) + ((x&0xFF00)>>8));
+  return ( ((x & 0x00ff) << 8) + ((x & 0xff00) >> 8));
 }
 
 double conv_frac(int x,int fbits,int zero) {
   int valsign = 1;
+  int valint  = 0;
   double valfrac = 0;
-  int valint = 0;
   int mask = 0x0001;
   int i;
 
@@ -24,9 +24,7 @@ double conv_frac(int x,int fbits,int zero) {
     valsign = -1; 
     x = ~x + 1;
   }
-  if (zero > 0) {
-    x = x >> zero ;
-  }
+  x = x >> zero ;
   for (i=fbits;i>0;i--) {
     if (x & mask) {
       valfrac += 1/(pow(2,i));
