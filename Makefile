@@ -11,7 +11,7 @@ getMPL115A2:	$(SRC)
 		@$(CC) -o $(OBJ) $(SRC) $(LIBS)
 clean:
 	@echo "[Clean]"
-	@rm -f *~ core *.bak
+	@rm -f $(OBJ) *~ core *.bak
 
 install:
 	@echo "[Install]"
