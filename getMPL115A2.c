@@ -39,7 +39,7 @@ double conv_frac(int x,int fbits,int zero) {
 }
 
 int get_reg(int fd, int reg) {
-  unsigned int data;
+  int data;
   do {
     data = wiringPiI2CReadReg16(fd,reg);
   } while (data < 0);
@@ -48,8 +48,7 @@ int get_reg(int fd, int reg) {
 
 int main(void)
 {
-  unsigned int i2c;
-  unsigned int data;
+  int i2c;
   double padc,tadc;
   double a0,b1,b2,c12,p_comp,p_hpa;
 
