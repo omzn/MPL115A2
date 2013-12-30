@@ -1,14 +1,15 @@
-MPL115A2 sensor reader for Raspberry Pi
+MPL115A2 reader for Raspberry Pi
 ========
 
 A program to read an absolute pressure sensor MPL115A2 for Raspberry Pi.
 
 MPL115A2 is an absolute pressure sensor with a digital I2C output.
 This program reads the sensor and shows current absolute pressure.
-
+Make sure you have connected the MPL115A2 sensor to your Raspberry Pi.
 ## Requirements
 
 - wiringPi library
+- An MPL115A2 sensor connected to I2C bus of Respberry Pi
 
 ## Installation
 
