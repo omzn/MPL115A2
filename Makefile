@@ -1,17 +1,18 @@
 DESTDIR	=	/usr
 PREFIX	=	/local
 CC	=	gcc
-SRC	=	mpl115a2.c
+SRC	=	getMPL115A2.c
+OBJ	=	getMPL115A2
 LIBS	=	-lwiringPi -lm
 
-all:		mpl115a2
-mpl115a2:	$(SRC)
-		@echo [make mpl115a2]
-		@$(CC) -o mpl115a2 $(SRC) $(LIBS)
+all:		getMPL115A2
+getMPL115A2:	$(SRC)
+		@echo [make getMPL115A2]
+		@$(CC) -o $(OBJ) $(SRC) $(LIBS)
 clean:
 	@echo "[Clean]"
 	@rm -f *~ core *.bak
 
 install:
 	@echo "[Install]"
-	@cp mpl115a2		$(DESTDIR)$(PREFIX)/bin
+	@cp $(OBJ)		$(DESTDIR)$(PREFIX)/bin
