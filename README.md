@@ -16,11 +16,20 @@ Make sure you have connected the MPL115A2 sensor to your Raspberry Pi.
     make
     make install
 
+or just put getMPL115A2.pl on your desired place.
+Add your user to the group 'i2c'.
+
 ## Usage
 
     $ getMPL115A2
     1006.8
 
+or
+
+    $ getMPL115A2.pl
+    1005.8
+
+    
 ## Reference
 
 [MPL115A2 data sheet](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf)
