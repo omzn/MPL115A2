@@ -55,6 +55,9 @@ int main(void)
     return -1;
   }
   wiringPiI2CWrite(i2c, 0x12);
+  wiringPiI2CWrite(i2c, 0x00);
+  usleep(100000);
+  wiringPiI2CWrite(i2c, 0x12);
   wiringPiI2CWrite(i2c, 0x01);
   usleep(100000);
 
